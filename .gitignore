@@ -1,0 +1,11 @@
+# 動画の原本（計 120MB）。GitHub には sorce/images/ の圧縮版だけを置く。
+# Git はバイナリを差分圧縮できないため、原本を入れると履歴が二度と軽くならない。
+sorce/_original/
+
+# ローカル専用の設定
+.claude/settings.local.json
+
+# OS が勝手に作るもの
+Thumbs.db
+desktop.ini
+.DS_Store
