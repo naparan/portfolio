@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プロフィール | ポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-logo"><a href="index.html">Portfolio</a></div>
+      <button class="hamburger" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="profile.html">プロフィール</a></li>
+          <li><a href="works.html">作品</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main-content">
+    <h2 class="section-title fade-in">プロフィール</h2>
+    <p class="section-subtitle fade-in">自己紹介</p>
+
+    <div class="profile-section fade-in">
+
+      <!-- 名前 -->
+      <div class="profile-item">
+        <div class="profile-label">
+          <span class="icon">&#128100;</span> 名前
+        </div>
+        <div class="profile-value">
+          なぱらん/Naparan
+        </div>
+      </div>
+
+      <!-- 連絡先 -->
+      <div class="profile-item">
+        <div class="profile-label">
+          <span class="icon">&#9993;</span> 連絡先
+        </div>
+        <div class="profile-value">
+          <!--
+            メールアドレスは script.js が組み立てます。ソースに平文で置くと
+            収集ボットに拾われるため、ここには断片しか書きません。
+            変更するときは data-user と data-domain を書き換えてください。
+          -->
+          gmail: <span class="obfuscated-mail" data-user="naparan.yukkuri" data-domain="gmail.com">
+            <noscript>naparan.yukkuri [at] gmail [dot] com</noscript>
+          </span> <br>
+          twitter: <a href="https://x.com/napapaaaaaaaaa" target="_blank" rel="noopener noreferrer">x.com/napapaaaaaaaaa</a> <br>
+          github: <a href="https://github.com/naparan" target="_blank" rel="noopener noreferrer">github.com/naparan</a>
+        </div>
+      </div>
+
+      <!-- 自由記入欄 -->
+      <div class="profile-item">
+        <div class="profile-label">
+          <span class="icon">&#9997;</span> 自己紹介
+        </div>
+        <div class="profile-value">
+          <!-- ここに自由にテキストを入力してください -->
+          その辺の大学生です。<br>
+          領域: Discord Bot,3Dモデリング,Minecraft Skript etc...<br>
+          趣味: 歌,VRChat<br>
+          ご気軽にご連絡ください。
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Naparan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

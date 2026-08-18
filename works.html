@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品 | ポートフォリオ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-logo"><a href="index.html">Portfolio</a></div>
+      <button class="hamburger" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="global-nav">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="profile.html">プロフィール</a></li>
+          <li><a href="works.html">作品</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main-content">
+    <h2 class="section-title fade-in">作品</h2>
+    <p class="section-subtitle fade-in">カテゴリーを選んで作品を絞り込めます</p>
+
+    <!-- Filter -->
+    <div class="filter-bar fade-in">
+      <button class="filter-btn active" data-filter="all">すべて</button>
+      <button class="filter-btn" data-filter="program">プログラム</button>
+      <button class="filter-btn" data-filter="cg">CG</button>
+      <button class="filter-btn" data-filter="other">その他</button>
+    </div>
+
+    <!-- Works Grid -->
+    <div class="card-grid">
+
+      <!-- YMM4 エフェクト（YouTube） -->
+      <div class="card fade-in" data-category="program">
+        <a class="card-thumb thumb-link" href="https://youtu.be/HaPd6Gdtti4"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="YMM4 エフェクトプラグイン開発の解説動画を YouTube で開く">
+          <img src="sorce/images/programming/ymm4_effect_poster.jpg" alt="">
+          <span class="play-badge" aria-hidden="true">▶</span>
+          <span class="media-badge">YouTube 2:27</span>
+        </a>
+        <div class="card-body">
+          <span class="card-tag">プログラム</span>
+          <h3>YMM4 エフェクトプラグイン開発</h3>
+          <p>ゆっくりMovieMaker4 の映像エフェクトを C# で自作。<code>VideoEffectBase</code> を継承し、アフィン変換で拡大縮小と平行移動を制御するエフェクトを実装しました。開発の流れを解説動画にまとめています。</p>
+        </div>
+      </div>
+
+      <!-- After Effects（YouTube） -->
+      <div class="card fade-in" data-category="cg">
+        <a class="card-thumb thumb-link" href="https://youtu.be/If-DrjgAwEg"
+           target="_blank" rel="noopener noreferrer"
+           aria-label="After Effects モーショングラフィックスを YouTube で開く">
+          <img src="sorce/images/CG/AE_prac_poster.jpg" alt="">
+          <span class="play-badge" aria-hidden="true">▶</span>
+          <span class="media-badge">YouTube 0:10</span>
+        </a>
+        <div class="card-body">
+          <span class="card-tag">CG</span>
+          <h3>After Effects モーショングラフィックス</h3>
+          <p>After Effects の練習作品。図形と写真を組み合わせたキネティックタイポグラフィのオープニングアニメーションです。</p>
+        </div>
+      </div>
+
+      <!-- VRChat アバター -->
+      <div class="card fade-in" data-category="cg">
+        <div class="card-thumb">
+          <img src="sorce/images/CG/avatar.jpg" alt="VRChat のアバター。マザーボードをアクセサリーとして身に着けている">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">CG</span>
+          <h3>VRChat アバター</h3>
+          <p>VRChat で使用しているアバター。マザーボードをアクセサリーとして配置しています。</p>
+        </div>
+      </div>
+
+      <!-- Blender: 銃 -->
+      <div class="card fade-in" data-category="cg">
+        <div class="card-thumb">
+          <img src="sorce/images/CG/gun.jpg" alt="Blender で制作した銃の 3D モデル">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">CG</span>
+          <h3>3D モデリング — 銃</h3>
+          <p>Blender で制作した銃の 3D モデル。バレルやグリップの形状をポリゴンで組み上げています。</p>
+        </div>
+      </div>
+
+      <!-- スケーリング比較（横長カード） -->
+      <div class="card card--wide fade-in" data-category="cg">
+        <div class="card-thumb card-thumb--compare" data-sync-group="scaling">
+          <figure class="compare-pane">
+            <video
+              src="sorce/images/CG/scaling_prac/no_scaling.mp4"
+              poster="sorce/images/CG/scaling_prac/no_scaling_poster.jpg"
+              controls preload="none" playsinline loop></video>
+            <figcaption>スケーリングなし</figcaption>
+          </figure>
+          <figure class="compare-pane">
+            <video
+              src="sorce/images/CG/scaling_prac/scaling.mp4"
+              poster="sorce/images/CG/scaling_prac/scaling_poster.jpg"
+              controls preload="none" playsinline loop></video>
+            <figcaption>スケーリングあり</figcaption>
+          </figure>
+          <span class="media-badge">0:20</span>
+        </div>
+        <div class="card-body">
+          <span class="card-tag">CG</span>
+          <h3>スケーリングの有無による比較</h3>
+          <p>キャラクターアニメーションにおける拡大縮小（スケーリング）の効き方を検証した比較。どちらかを再生すると 2 本が同時に動きます。</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Naparan. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
